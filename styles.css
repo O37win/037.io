@@ -1,0 +1,103 @@
+
+body {
+    display: flex;
+    height: 100vh; /* 使页面充满整个视口高度 */
+    margin: 0;
+    flex-direction: column; /* 设置主轴方向为垂直方向 */
+    background-color: #ffffff;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size:500%;
+    background-color: #7aa9d600;
+    color: #e6ff02;
+}
+p {
+    font-size:100%;
+    background-color: #7aa9d600;
+    color: #000000;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 将按钮容器设置为弹性容器，并水平居中对齐 */
+.button-container {
+    display: flex;
+    gap:60px;
+    justify-content: center; /* 水平居中 */
+}
+
+/* 样式按钮 */
+.button {
+    background-color: #7aa9d6;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    border: none; /* 移除边框 */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* 添加指针样式 */
+}
+
+/* 鼠标悬停时的样式 */
+.button:hover {
+    background-color: #ffffff;
+}
+
+.rectangle {
+    width: 100%;
+    height: 150.5px;
+    background-color: #7aa9d6;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.contact  {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 图标和链接之间的间距 */
+  justify-content: center; /* 水平居中 */
+}
+
+.contact i {
+    height: 18px;
+    width: 18px;
+    color: #000000;
+}
+
+/* 社交媒体链接样式 */
+.contact a {
+  text-decoration: none;
+  color: #000000; /* 设置链接颜色为黑色 */
+  font-weight: bold;
+}
+
+/* 鼠标悬停时的社交媒体链接样式 */
+.contact a:hover {
+  color: #333333;
+}
+
+@media screen and (max-width:520px){
+  .contact {
+    gap: 30px;
+  }
+  .contact a {
+    display:none;
+  }
+}
+
+@media screen and (max-width:650px){
+  .button-container {
+    gap:0px;
+    justify-content: space-between; /* 平均分布按钮 */
+  }
+}
