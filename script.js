@@ -38,9 +38,27 @@ projectButton.addEventListener("click", function() {
 });
 
 worksButton.addEventListener("click", function() {
-    document.getElementById("result").innerHTML = `
-        <p>Not completed</p>
-    `;
+    const resultDiv = document.getElementById("result");
+
+    // 清空結果區域
+    resultDiv.innerHTML = "";
+
+    // 創建正方形框框
+    const square = document.createElement("div");
+    square.style.width = "100px";
+    square.style.height = "100px";
+    square.style.backgroundColor = "#007BFF";
+    square.style.cursor = "pointer";
+    square.style.display = "inline-block";
+    square.style.margin = "10px";
+
+    // 添加點擊事件以跳轉到另一個網址
+    square.addEventListener("click", function() {
+        window.location.href = "https://o37win.github.io/O37win.2048game.github.io/";
+    });
+
+    // 將正方形框框添加到結果區域
+    resultDiv.appendChild(square);
 });
 
 xButton.addEventListener("click", function() {
@@ -54,4 +72,3 @@ yButton.addEventListener("click", function() {
         <p>Not completed</p>
     `;
 });
-
