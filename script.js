@@ -17,6 +17,7 @@ aboutButton.addEventListener("click", function() {
             <li>Python</li>
             <li>C</li>
             <li>HTML</li>
+            <li>CSS</li>
             <li>JavaScript</li>
         </ul>
         <h4>My Programming Learning Journey</h4>
