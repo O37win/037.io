@@ -54,6 +54,14 @@ worksButton.addEventListener("click", function() {
     square.style.display = "inline-block";
     square.style.margin = "10px";
 
+    
+    // 創建標籤文字
+    const label = document.createElement("p");
+    label.textContent = "2048game";
+    label.style.textAlign = "center";
+    label.style.margin = "5px 0 0 0";
+    label.style.fontSize = "14px";
+    
     // 添加點擊事件以跳轉到另一個網址
     square.addEventListener("click", function() {
         window.location.href = "https://o37win.github.io/O37win.2048game.github.io/";
