@@ -47,7 +47,9 @@ worksButton.addEventListener("click", function() {
     const square = document.createElement("div");
     square.style.width = "100px";
     square.style.height = "100px";
-    square.style.backgroundColor = "#007BFF";
+    square.style.backgroundImage = "url('https://i.imgur.com/F2axrbN.png')";
+    square.style.backgroundSize = "cover";
+    square.style.backgroundPosition = "center";
     square.style.cursor = "pointer";
     square.style.display = "inline-block";
     square.style.margin = "10px";
