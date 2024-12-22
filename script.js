@@ -51,8 +51,8 @@ worksButton.addEventListener("click", function() {
 
     // 創建正方形框框
     const square = document.createElement("div");
-    square.style.width = "100px";
-    square.style.height = "100px";
+    square.style.width = "200px";
+    square.style.height = "200px";
     square.style.backgroundImage = "url('https://i.imgur.com/F2axrbN.png')";
     square.style.backgroundSize = "cover";
     square.style.backgroundPosition = "center";
