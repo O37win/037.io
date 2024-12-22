@@ -43,6 +43,12 @@ worksButton.addEventListener("click", function() {
     // 清空結果區域
     resultDiv.innerHTML = "";
 
+    // 創建容器以包含正方形框框和標籤
+    const container = document.createElement("div");
+    container.style.display = "inline-block";
+    container.style.textAlign = "center";
+    container.style.margin = "10px";
+
     // 創建正方形框框
     const square = document.createElement("div");
     square.style.width = "100px";
@@ -51,24 +57,24 @@ worksButton.addEventListener("click", function() {
     square.style.backgroundSize = "cover";
     square.style.backgroundPosition = "center";
     square.style.cursor = "pointer";
-    square.style.display = "inline-block";
-    square.style.margin = "10px";
 
-    
-    // 創建標籤文字
-    const label = document.createElement("p");
-    label.textContent = "2048game";
-    label.style.textAlign = "center";
-    label.style.margin = "5px 0 0 0";
-    label.style.fontSize = "14px";
-    
     // 添加點擊事件以跳轉到另一個網址
     square.addEventListener("click", function() {
         window.location.href = "https://o37win.github.io/O37win.2048game.github.io/";
     });
 
-    // 將正方形框框添加到結果區域
-    resultDiv.appendChild(square);
+    // 創建標籤文字
+    const label = document.createElement("p");
+    label.textContent = "2048game";
+    label.style.margin = "5px 0 0 0";
+    label.style.fontSize = "14px";
+
+    // 將正方形框框和標籤添加到容器中
+    container.appendChild(square);
+    container.appendChild(label);
+
+    // 將容器添加到結果區域
+    resultDiv.appendChild(container);
 });
 
 xButton.addEventListener("click", function() {
@@ -82,3 +88,4 @@ yButton.addEventListener("click", function() {
         <p>Not completed</p>
     `;
 });
+
